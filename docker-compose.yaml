@@ -8,8 +8,8 @@ services:
       - "8069:8069"
     volumes:
       - odoo-web-data:/var/lib/odoo
-      - /srv/odoo/config:/etc/odoo
-      - /srv/odoo/addons:/mnt/extra-addons
+      - ~/odoo/config:/etc/odoo
+      - ~/odoo/addons:/mnt/extra-addons
   db:
     image: postgres:latest
     environment:
